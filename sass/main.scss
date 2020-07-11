@@ -1,0 +1,389 @@
+@import './reset';
+@import './config';
+
+body {
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+}
+
+#top-banner {
+    background-image: url(../images/header-bg.png);
+    @include background-img;
+    @include main-size;
+}
+
+.header__main {
+    @include flex;
+
+    #{&}__left {
+        color: $text-gray;
+        line-height: 2;
+        width: 50%;
+
+        h3 {
+            font-weight: map-get($font-weights, regular);
+        }
+
+        h1 {
+            color: $text-pink;
+            font-weight: map-get($font-weights, medium);
+        }
+
+        p {
+            font-weight: map-get($font-weights, small);
+            line-height: 2;
+            font-size: 1.1rem;
+            padding: 1.5rem 0;
+            text-align: justify;
+        }
+
+        .btn-banner {
+            border: none;
+            background-color: $text-pink;
+            color: $text-white;
+            padding: 0 1rem;
+            font-size: 1rem;
+            font-weight: map-get($font-weights, small);
+            border-radius: 0.2rem;
+        }
+    }
+
+    #{&}__right {
+        width: 50%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+#biography {
+    background-image: url(../images/biography-bg.png);
+    @include background-img;
+    @include main-size;
+
+}
+
+.biography__main {
+    @include flex;
+    padding: 5rem 0;
+
+    #{&}__left {
+        width: 50%;
+
+        img {
+            width: 70%;
+            height: auto;
+        }
+    }
+
+    #{&}__right {
+        width: 50%;
+        padding-left: 2rem;
+
+        h1 {
+            font-weight: map-get($font-weights, medium);
+        }
+
+        p {
+            font-weight: map-get($font-weights, small);
+            line-height: 2;
+            font-size: 1.1rem;
+            padding: 1.5rem 0;
+            text-align: justify;
+        }
+
+        .btn-biography {
+            border: none;
+            background-color: $text-pink;
+            color: $text-white;
+            padding: 0.4rem 1rem;
+            font-size: 1rem;
+            font-weight: map-get($font-weights, small);
+            border-radius: 0.2rem;
+        }
+    }
+}
+
+#portfolio {
+    background-image: url(../images/latest-work-bg.png);
+    @include background-img;
+    @include main-size;
+}
+
+.portfolio__main {
+    h1 {
+        text-align: center;
+        padding: 5rem 0;
+    }
+
+    #{&}_items {
+        @include flex;
+
+        .portfolio__main__items_one,
+        .portfolio__main__items_two,
+        .portfolio__main__items_three {
+            padding: 0 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+#testimonial {
+    background-image: url(../images/header-bg.png);
+    @include background-img;
+    @include main-size;
+}
+
+.testimonial__main {
+    text-align: center;
+    color: $text-gray;
+
+    h1 {
+        padding-top: 5rem;
+    }
+
+    #{&}__carosel__designation {
+        padding: 2rem 0;
+
+        h4 {
+            font-size: 2rem;
+            font-weight: map-get($font-weights, normal);
+        }
+
+        p {
+            font-size: 1rem;
+            padding: 1rem 0;
+        }
+    }
+
+    #{&}__carosel__msgbox {
+        width: 40rem;
+        margin: auto;
+        background-color: $text-pink;
+        border-radius: 0.3rem;
+        padding: 3rem 0;
+        color: $text-white;
+        margin-top: 1rem;
+
+        h4 {
+            font-size: 1rem;
+            font-weight: map-get($font-weights, small);
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: map-get($font-weights, small);
+        }
+    }
+}
+
+#getInTouch {
+    background-image: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    @include main-size;
+    padding-top: 3rem;
+
+    h1 {
+        text-align: center;
+        font-weight: map-get($font-weights, regular);
+    }
+}
+
+.getInTouch__main {
+    margin-top: 3rem;
+    @include flex;
+    color: $text-gray;
+
+    #{&}__map {
+        width: 50%;
+        padding: 0 2rem;
+        margin-top: 2rem;
+    }
+
+    #{&}__msg {
+        width: 50%;
+
+        h3 {
+            padding-top: 2rem;
+            font-weight: map-get($font-weights, regular);
+        }
+
+        p {
+            font-weight: map-get($font-weights, small);
+            line-height: 2;
+            font-size: 1.1rem;
+            padding: 1.5rem 0;
+            text-align: justify;
+        }
+
+        .getInTouch__main__msg__form {
+
+            input[type=text],
+            input[type=email] {
+                width: 100%;
+                padding: 8px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                font-weight: map-get($font-weights, small);
+            }
+        }
+    }
+}
+
+footer {
+    p {
+        text-align: center;
+        font-weight: map-get($font-weights, small);
+        padding: 1rem 0;
+    }
+}
+
+// @media screen and (min-width: 480px) {
+//     #top-banner {
+//         // height: 70vh;
+//         height: auto;
+//         width: 100%;
+//     }
+
+//     .header__main {
+//         display: flex;
+//         flex-direction: column;
+//         width: 100%;
+
+//         #{&}__left {
+//             color: #272727;
+//             line-height: 2;
+//             width: 85%;
+//             margin-top: 3rem;
+//         }
+
+//         #{&}__right {
+//             width: 30%;
+//             margin-top: -27rem;
+//             margin-left: 22rem;
+//         }
+//     }
+
+//     #biography {
+//         height: auto;
+//     }
+
+//     .biography__main {
+//         display: flex;
+//         flex-direction: column;
+//         width: 100%;
+
+//         #{&}__left {
+//             width: 50%;
+//             margin-left: 22rem;
+//             margin-top: 2rem;
+//         }
+
+//         #{&}__right {
+//             width: 84%;
+//             margin-top: -4rem;
+//         }
+//     }
+
+//     #portfolio {
+//         height: auto;
+//     }
+
+//     .portfolio__main {
+//         h1 {
+//             text-align: center;
+//             padding-top: 4rem;
+//         }
+
+//         #{&}_items {
+//             display: flex;
+//             flex-direction: column;
+//             width: 100%;
+//             padding-top: 0;
+
+//             .portfolio__main__items_one,
+//             .portfolio__main__items_two,
+//             .portfolio__main__items_three {
+
+//                 margin-left: 3rem;
+
+//                 img {
+//                     width: 80%;
+//                 }
+//             }
+
+//         }
+//     }
+
+//     #testimonial {
+//         height: auto;
+//     }
+
+//     .testimonial__main {
+//         width: 100%;
+
+//         text-align: center;
+//         color: $text-gray;
+
+//         h1 {
+//             padding-top: 5rem;
+//         }
+
+//         #{&}__carosel__msgbox {
+//             width: 25rem;
+
+//             h2 {
+//                 font-size: 1.5rem;
+//                 font-weight: map-get($font-weights, small);
+//             }
+//         }
+//     }
+
+//     #getInTouch {
+//         height: auto;
+//     }
+
+//     .getInTouch__main {
+//         display: flex;
+//         flex-direction: column;
+//         width: 100%;
+
+//         #{&}__map {
+//             width: 100%;
+
+//             iframe {
+//                 width: 100%;
+//             }
+//         }
+
+//         #{&}__msg {
+//             width: 50%;
+
+//             h3 {
+//                 padding-top: 2rem;
+//                 font-weight: map-get($font-weights, regular);
+//             }
+
+//             p {
+//                 font-weight: map-get($font-weights, small);
+//                 line-height: 2;
+//                 font-size: 1.1rem;
+//                 padding: 1.5rem 0;
+//                 text-align: justify;
+//             }
+
+
+//         }
+//     }
+
+
+
+
+// }

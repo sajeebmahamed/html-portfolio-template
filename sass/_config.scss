@@ -1,0 +1,26 @@
+$text-black: #2d2d2d;
+$text-gray: #272727;
+$text-pink: #EC4C7A;
+$text-white: #fff;
+
+$font-weights: (
+    "small": 200,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+@mixin background-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin main-size {
+    height: 100vh;
+    width: 100%;
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}

@@ -1,0 +1,360 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 1.3rem;
+}
+
+#top-banner {
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.header__main .header__main__left {
+  color: #272727;
+  line-height: 2;
+  width: 50%;
+}
+
+.header__main .header__main__left h3 {
+  font-weight: 400;
+}
+
+.header__main .header__main__left h1 {
+  color: #EC4C7A;
+  font-weight: 500;
+}
+
+.header__main .header__main__left p {
+  font-weight: 200;
+  line-height: 2;
+  font-size: 1.1rem;
+  padding: 1.5rem 0;
+  text-align: justify;
+}
+
+.header__main .header__main__left .btn-banner {
+  border: none;
+  background-color: #EC4C7A;
+  color: #fff;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-radius: 0.2rem;
+}
+
+.header__main .header__main__right {
+  width: 50%;
+}
+
+.header__main .header__main__right img {
+  width: 100%;
+  height: auto;
+}
+
+#biography {
+  background-image: url(../images/biography-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.biography__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding: 5rem 0;
+}
+
+.biography__main .biography__main__left {
+  width: 50%;
+}
+
+.biography__main .biography__main__left img {
+  width: 70%;
+  height: auto;
+}
+
+.biography__main .biography__main__right {
+  width: 50%;
+  padding-left: 2rem;
+}
+
+.biography__main .biography__main__right h1 {
+  font-weight: 500;
+}
+
+.biography__main .biography__main__right p {
+  font-weight: 200;
+  line-height: 2;
+  font-size: 1.1rem;
+  padding: 1.5rem 0;
+  text-align: justify;
+}
+
+.biography__main .biography__main__right .btn-biography {
+  border: none;
+  background-color: #EC4C7A;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-radius: 0.2rem;
+}
+
+#portfolio {
+  background-image: url(../images/latest-work-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.portfolio__main h1 {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.portfolio__main .portfolio__main_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.portfolio__main .portfolio__main_items .portfolio__main__items_one,
+.portfolio__main .portfolio__main_items .portfolio__main__items_two,
+.portfolio__main .portfolio__main_items .portfolio__main__items_three {
+  padding: 0 1rem;
+}
+
+.portfolio__main .portfolio__main_items .portfolio__main__items_one img,
+.portfolio__main .portfolio__main_items .portfolio__main__items_two img,
+.portfolio__main .portfolio__main_items .portfolio__main__items_three img {
+  width: 100%;
+}
+
+#testimonial {
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.testimonial__main {
+  text-align: center;
+  color: #272727;
+}
+
+.testimonial__main h1 {
+  padding-top: 5rem;
+}
+
+.testimonial__main .testimonial__main__carosel__designation {
+  padding: 2rem 0;
+}
+
+.testimonial__main .testimonial__main__carosel__designation h4 {
+  font-size: 2rem;
+}
+
+.testimonial__main .testimonial__main__carosel__designation p {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.testimonial__main .testimonial__main__carosel__msgbox {
+  width: 40rem;
+  margin: auto;
+  background-color: #EC4C7A;
+  border-radius: 0.3rem;
+  padding: 3rem 0;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.testimonial__main .testimonial__main__carosel__msgbox h4 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.testimonial__main .testimonial__main__carosel__msgbox h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+#getInTouch {
+  background-image: url(../images/exp-bg.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+#getInTouch h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.getInTouch__main {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  color: #272727;
+}
+
+.getInTouch__main .getInTouch__main__map {
+  width: 50%;
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+
+.getInTouch__main .getInTouch__main__msg {
+  width: 50%;
+}
+
+.getInTouch__main .getInTouch__main__msg h3 {
+  padding-top: 2rem;
+  font-weight: 400;
+}
+
+.getInTouch__main .getInTouch__main__msg p {
+  font-weight: 200;
+  line-height: 2;
+  font-size: 1.1rem;
+  padding: 1.5rem 0;
+  text-align: justify;
+}
+
+.getInTouch__main .getInTouch__main__msg .getInTouch__main__msg__form input[type=text],
+.getInTouch__main .getInTouch__main__msg .getInTouch__main__msg__form input[type=email] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-weight: 200;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 200;
+  padding: 1rem 0;
+}
+/*# sourceMappingURL=main.css.map */
